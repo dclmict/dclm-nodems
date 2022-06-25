@@ -1,0 +1,11 @@
+services:
+
+  nms-relay:
+    image: opeoniye/nms:2.3.12
+    container_name: nms-relay
+    ports:
+      - 1940:1940
+      - 9000:9000
+    volumes:
+      - ./app-relay.js:/usr/src/app/bin/app.js
+    restart: always
