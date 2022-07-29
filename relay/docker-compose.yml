@@ -1,7 +1,7 @@
 services:
 
   nms-relay:
-    image: opeoniye/nms:2.3.12
+    image: illuspas/node-media-server #opeoniye/nms:2.3.12
     container_name: nms-relay
     ports:
       - 1940:1940
