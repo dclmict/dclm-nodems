@@ -1,7 +1,7 @@
 # waran waran files
 **/.DS_Store
 .setup.txt
-
+.env
+access.txt
 
 # folders
-.build

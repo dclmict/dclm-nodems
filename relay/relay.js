@@ -62,16 +62,6 @@ const config = {
       }
     ]
   },
-  // relay: {
-  //   ffmpeg: __dirname+'/ffmpeg/ffmpeg',
-  //   tasks: [
-  //     {
-  //       app: 'live',
-  //       mode: 'push',
-  //       edge: 'rtmp://10.10.0.131',
-  //     }
-  //   ]
-  // },
   auth: {
     api: true,
     api_user: 'admin',

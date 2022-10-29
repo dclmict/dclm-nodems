@@ -1,0 +1,25 @@
+services:
+
+  nodems-server:
+    image: opeoniye/dclm-nodems-server:$NODEMS_VERSION
+    container_name: nodems-server
+    ports:
+      - 1940:1940
+      - 9000:9000
+    networks:
+      - dclm-nodems
+    restart: always
+
+  nodems-relay:
+    image: opeoniye/dclm-nodems-relay:$NODEMS_VERSION
+    container_name: nodems-relay
+    ports:
+      - 1940:1940
+      - 9000:9000
+    networks:
+      - dclm-nodems
+    restart: always
+
+networks:
+  dclm-nodems:
+    name: dclm-nodems
