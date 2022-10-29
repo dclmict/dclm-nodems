@@ -16,6 +16,6 @@ RUN apk add --update --no-cache curl tar xz && \
 
 FROM dclm-nodems
 
-WORKDIR /usr/src/app/bin
+WORKDIR /usr/src/app
 
-COPY ./server.js app.js
+COPY ./server.js ./bin/app.js

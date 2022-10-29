@@ -16,6 +16,6 @@ RUN apk add --update --no-cache curl tar xz && \
 
 FROM dclm-nodems
 
-WORKDIR /usr/src/app/bin
+WORKDIR /usr/src/app
 
-COPY ./relay.js ./app.js
+COPY ./relay.js ./bin/app.js
